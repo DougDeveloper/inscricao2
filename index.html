@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+    <style>
+        main {
+            background-color: #F0F0F0;
+            width: 400px;
+            min-height: 300px;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        label{
+            margin-bottom: 5px
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- o nome -->
+        <label>
+            Nome:
+            <input id="nome" type="text" placeholder="Digite seu nome">
+        </label>
+
+        <!-- email -->
+        <label>
+            Email:
+            <input id="email" type="email" placeholder="Digite seu email">
+        </label>
+
+        <!-- senha -->
+        <label>
+            Senha:
+            <input id="senha" type="password" placeholder="Digite sua senha" name="senha" required>
+        </label>
+    
+        <!-- confirmação de senha -->
+        <label>
+            Confirmação de senha:
+            <input id="confirmação de senha" type="password" placeholder="Confirme a sua senha" required>
+        </label>
+    
+        <!-- data de nascimento -->
+        <label>
+            Data de nascimento:
+            <input id="data de nascimento" type="date" required>
+        </label>
+        <!-- estado -->
+        <label>
+            Estado:
+            <select>
+                <option disabled selected>Escolha um Estado</option>
+                <optgroup label="Norte">
+                    <option value="AC">Acre</option>
+                    <option value="AP">Amapá</option>
+                </optgroup>
+                <optgroup label="Sudeste">
+                    <option value="ES">Espírito Santo</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+            </select>
+        </label>
+    
+        <!-- cidade -->
+
+        <!-- Número de filhos -->
+        <label>
+            Número de filhos:
+            <input type="number" value="0" min="0">
+        </label>    
+
+        <!-- Meio de contato preferido: Telefone, whatsapp, SMS ou email -->
+        <fieldset>
+            <legend>Meio de contao</legend> 
+            <label><input name="meioDeContato" type="radio"> Whatsapp</label>
+            <label><input name="meioDeContato" type="radio"> Telfone</label>
+            <label><input name="meioDeContato" type="radio"> SMS</label>
+            <label><input name="meioDeContato" type="radio"> E-mail</label>
+        </fieldset> 
+        <!-- Disponibilidade: Manhã, tarde, noite -->
+        
+        <!-- Upload de imagem -->
+    </main>
+    
+</body>
+</html>
